@@ -1,0 +1,285 @@
+=== x1 measure.sh  vantage=codespace ===
+date      2026-10-17T01:34:01Z
+hostname  codespaces-0adb2d
+uname     Linux codespaces-0adb2d 6.8.0-1064-azure #72~22.04.1-Ubuntu SMP Wed Jul 22 23:39:45 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+commit    2ee226e
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    inet 10.0.1.242/16 metric 100 brd 10.0.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+=== public address  01:34:01 ===
+trial 1  http://checkip.amazonaws.com/
+  dns            3.0 ms  checkip.amazonaws.com -> 18.211.60.32:80 (IPv4)
+  connect       63.0 ms  10.0.1.242:52254 -> 18.211.60.32:80
+  first byte    63.5 ms
+  transfer       0.1 ms  12 bytes, 1.53 Mbit/s
+  status     HTTP/1.1 200 
+connect over 1 trials: min 63.0 ms, median 63.0 ms
+4.155.74.51
+
+=== latency cdn  01:34:01 ===
+trial 1  http://example.com/
+  dns            8.8 ms  example.com -> 172.66.147.243:80 (IPv4)
+  connect        4.9 ms  10.0.1.242:37834 -> 172.66.147.243:80
+  first byte    12.2 ms
+  transfer       0.8 ms  589 bytes, 6.28 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://example.com/
+  dns            0.7 ms  example.com -> 172.66.147.243:80 (IPv4)
+  connect        4.9 ms  10.0.1.242:37848 -> 172.66.147.243:80
+  first byte    11.0 ms
+  transfer       0.3 ms  589 bytes, 18.43 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://example.com/
+  dns            0.4 ms  example.com -> 172.66.147.243:80 (IPv4)
+  connect        5.0 ms  10.0.1.242:37860 -> 172.66.147.243:80
+  first byte    10.0 ms
+  transfer       0.9 ms  589 bytes, 5.30 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://example.com/
+  dns            0.5 ms  example.com -> 104.20.23.154:80 (IPv4)
+  connect        5.0 ms  10.0.1.242:36452 -> 104.20.23.154:80
+  first byte    11.8 ms
+  transfer       2.4 ms  589 bytes, 1.93 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://example.com/
+  dns            0.7 ms  example.com -> 104.20.23.154:80 (IPv4)
+  connect        5.1 ms  10.0.1.242:36460 -> 104.20.23.154:80
+  first byte    13.9 ms
+  transfer       1.0 ms  589 bytes, 4.72 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 4.9 ms, median 5.0 ms
+
+=== latency utah  01:34:01 ===
+trial 1  http://mirrors.xmission.com/debian/README
+  dns            7.0 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       41.7 ms  10.0.1.242:49222 -> 198.60.22.13:80
+  first byte    41.7 ms
+  transfer       0.0 ms  1198 bytes, 558.77 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://mirrors.xmission.com/debian/README
+  dns            1.7 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       31.1 ms  10.0.1.242:49224 -> 198.60.22.13:80
+  first byte    31.7 ms
+  transfer       0.0 ms  1198 bytes, 2070.43 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://mirrors.xmission.com/debian/README
+  dns            0.5 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       31.1 ms  10.0.1.242:49228 -> 198.60.22.13:80
+  first byte    31.8 ms
+  transfer       0.0 ms  1198 bytes, 2224.70 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://mirrors.xmission.com/debian/README
+  dns            1.2 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       52.9 ms  10.0.1.242:49240 -> 198.60.22.13:80
+  first byte    55.1 ms
+  transfer       0.0 ms  1198 bytes, 1811.72 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://mirrors.xmission.com/debian/README
+  dns            0.5 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       31.1 ms  10.0.1.242:49252 -> 198.60.22.13:80
+  first byte    31.1 ms
+  transfer       0.0 ms  1198 bytes, 1282.31 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 31.1 ms, median 31.1 ms
+
+=== latency california  01:34:02 ===
+trial 1  http://mirrors.ocf.berkeley.edu/debian/README
+  dns           40.1 ms  mirrors.ocf.berkeley.edu -> 169.229.200.70:80 (IPv4)
+  connect       48.8 ms  10.0.1.242:57608 -> 169.229.200.70:80
+  first byte    48.7 ms
+  transfer       0.3 ms  1198 bytes, 35.31 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://mirrors.ocf.berkeley.edu/debian/README
+  dns            0.4 ms  mirrors.ocf.berkeley.edu -> 169.229.200.70:80 (IPv4)
+  connect       42.5 ms  10.0.1.242:57614 -> 169.229.200.70:80
+  first byte    42.5 ms
+  transfer       0.1 ms  1198 bytes, 82.92 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://mirrors.ocf.berkeley.edu/debian/README
+  dns            0.4 ms  mirrors.ocf.berkeley.edu -> 169.229.200.70:80 (IPv4)
+  connect       50.0 ms  10.0.1.242:57624 -> 169.229.200.70:80
+  first byte    49.7 ms
+  transfer       0.1 ms  1198 bytes, 108.66 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://mirrors.ocf.berkeley.edu/debian/README
+  dns            0.5 ms  mirrors.ocf.berkeley.edu -> 169.229.200.70:80 (IPv4)
+  connect       48.0 ms  10.0.1.242:57632 -> 169.229.200.70:80
+  first byte    48.0 ms
+  transfer       0.1 ms  1198 bytes, 79.92 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://mirrors.ocf.berkeley.edu/debian/README
+  dns            0.3 ms  mirrors.ocf.berkeley.edu -> 169.229.200.70:80 (IPv4)
+  connect       50.7 ms  10.0.1.242:57640 -> 169.229.200.70:80
+  first byte    50.7 ms
+  transfer       0.0 ms  1198 bytes, 234.63 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 42.5 ms, median 48.8 ms
+
+=== latency new york  01:34:02 ===
+trial 1  http://mirrors.rit.edu/debian/README
+  dns           48.1 ms  mirrors.rit.edu -> 129.21.171.72:80 (IPv4)
+  connect       71.5 ms  10.0.1.242:49826 -> 129.21.171.72:80
+  first byte    72.0 ms
+  transfer       0.0 ms  1198 bytes, 903.30 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://mirrors.rit.edu/debian/README
+  dns            4.3 ms  mirrors.rit.edu -> 129.21.171.72:80 (IPv4)
+  connect       71.5 ms  10.0.1.242:49830 -> 129.21.171.72:80
+  first byte    71.5 ms
+  transfer       0.0 ms  1198 bytes, 2671.87 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://mirrors.rit.edu/debian/README
+  dns            0.4 ms  mirrors.rit.edu -> 129.21.171.72:80 (IPv4)
+  connect       71.8 ms  10.0.1.242:49832 -> 129.21.171.72:80
+  first byte    71.7 ms
+  transfer       0.0 ms  1198 bytes, 2478.41 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://mirrors.rit.edu/debian/README
+  dns            2.0 ms  mirrors.rit.edu -> 129.21.171.72:80 (IPv4)
+  connect       72.0 ms  10.0.1.242:49836 -> 129.21.171.72:80
+  first byte    71.9 ms
+  transfer       0.0 ms  1198 bytes, 2070.87 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://mirrors.rit.edu/debian/README
+  dns            0.5 ms  mirrors.rit.edu -> 129.21.171.72:80 (IPv4)
+  connect       74.4 ms  10.0.1.242:49846 -> 129.21.171.72:80
+  first byte    71.3 ms
+  transfer       0.0 ms  1198 bytes, 330.44 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 71.5 ms, median 71.8 ms
+
+=== latency germany  01:34:03 ===
+trial 1  http://ftp.fau.de/debian/README
+  dns            3.8 ms  ftp.fau.de -> 131.188.12.211:80 (IPv4)
+  connect      149.7 ms  10.0.1.242:43052 -> 131.188.12.211:80
+  first byte   149.8 ms
+  transfer       0.3 ms  1198 bytes, 34.42 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://ftp.fau.de/debian/README
+  dns            0.5 ms  ftp.fau.de -> 131.188.12.211:80 (IPv4)
+  connect      153.9 ms  10.0.1.242:43062 -> 131.188.12.211:80
+  first byte   153.9 ms
+  transfer       0.0 ms  1198 bytes, 2214.42 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://ftp.fau.de/debian/README
+  dns            0.5 ms  ftp.fau.de -> 131.188.12.211:80 (IPv4)
+  connect      148.6 ms  10.0.1.242:43074 -> 131.188.12.211:80
+  first byte   148.5 ms
+  transfer       0.0 ms  1198 bytes, 278.73 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://ftp.fau.de/debian/README
+  dns            0.4 ms  ftp.fau.de -> 131.188.12.211:80 (IPv4)
+  connect      150.2 ms  10.0.1.242:43086 -> 131.188.12.211:80
+  first byte   149.6 ms
+  transfer       0.0 ms  1198 bytes, 212.58 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://ftp.fau.de/debian/README
+  dns            0.5 ms  ftp.fau.de -> 131.188.12.211:80 (IPv4)
+  connect      150.1 ms  10.0.1.242:43098 -> 131.188.12.211:80
+  first byte   150.0 ms
+  transfer       0.1 ms  1198 bytes, 137.66 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 148.6 ms, median 150.1 ms
+
+=== latency japan  01:34:04 ===
+trial 1  http://ftp.jaist.ac.jp/debian/README
+  dns            4.5 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      108.2 ms  10.0.1.242:60854 -> 150.65.7.130:80
+  first byte   109.5 ms
+  transfer       0.0 ms  1198 bytes, 259.53 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://ftp.jaist.ac.jp/debian/README
+  dns            2.4 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      130.5 ms  10.0.1.242:60864 -> 150.65.7.130:80
+  first byte   131.2 ms
+  transfer       0.1 ms  1198 bytes, 73.43 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://ftp.jaist.ac.jp/debian/README
+  dns            1.6 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      135.1 ms  10.0.1.242:60870 -> 150.65.7.130:80
+  first byte   135.1 ms
+  transfer       0.1 ms  1198 bytes, 100.77 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://ftp.jaist.ac.jp/debian/README
+  dns            0.5 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      130.7 ms  10.0.1.242:60876 -> 150.65.7.130:80
+  first byte   131.5 ms
+  transfer       0.1 ms  1198 bytes, 115.88 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://ftp.jaist.ac.jp/debian/README
+  dns            0.4 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      111.2 ms  10.0.1.242:60878 -> 150.65.7.130:80
+  first byte   107.2 ms
+  transfer       0.0 ms  1198 bytes, 2497.78 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 108.2 ms, median 130.5 ms
+
+=== download utah  01:34:06 ===
+trial 1  http://mirrors.xmission.com/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            2.2 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       52.0 ms  10.0.1.242:49256 -> 198.60.22.13:80
+  first byte    54.5 ms
+  transfer     560.8 ms  13332733 bytes, 190.19 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://mirrors.xmission.com/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            2.7 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       52.7 ms  10.0.1.242:49258 -> 198.60.22.13:80
+  first byte    52.8 ms
+  transfer     568.6 ms  13332733 bytes, 187.59 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://mirrors.xmission.com/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            2.1 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       31.2 ms  10.0.1.242:49266 -> 198.60.22.13:80
+  first byte    32.5 ms
+  transfer     341.0 ms  13332733 bytes, 312.75 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 3 trials: min 31.2 ms, median 52.0 ms
+
+=== download japan  01:34:07 ===
+trial 1  http://ftp.jaist.ac.jp/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            0.6 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      106.8 ms  10.0.1.242:60888 -> 150.65.7.130:80
+  first byte   147.6 ms
+  transfer    5004.6 ms  13332733 bytes, 21.31 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://ftp.jaist.ac.jp/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            1.8 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      131.8 ms  10.0.1.242:60422 -> 150.65.7.130:80
+  first byte   191.4 ms
+  transfer    6096.7 ms  13332733 bytes, 17.49 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://ftp.jaist.ac.jp/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            1.2 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      106.8 ms  10.0.1.242:59418 -> 150.65.7.130:80
+  first byte   108.3 ms
+  transfer    4152.5 ms  13332733 bytes, 25.69 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 3 trials: min 106.8 ms, median 106.8 ms
+
+=== two at once  01:34:23 ===
+trial 1  http://mirrors.xmission.com/debian/README
+  dns            4.5 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       52.2 ms  10.0.1.242:33362 -> 198.60.22.13:80
+  first byte    52.2 ms
+  transfer       0.0 ms  1198 bytes, 261.66 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 1 trials: min 52.2 ms, median 52.2 ms
+trial 1  http://mirrors.xmission.com/debian/README
+  dns            1.7 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       52.2 ms  10.0.1.242:33352 -> 198.60.22.13:80
+  first byte    52.1 ms
+  transfer       0.0 ms  1198 bytes, 704.45 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 1 trials: min 52.2 ms, median 52.2 ms
+
+=== dns trace  01:34:24 ===
+Notice: dig command is not installed
+
+=== done in 23 s, 0 failed ===
