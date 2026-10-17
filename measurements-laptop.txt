@@ -1,0 +1,450 @@
+=== x1 measure.sh  vantage=laptop ===
+date      2026-10-17T01:15:16Z
+hostname  harrisonmbp.local
+uname     Darwin harrisonmbp.local 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020 arm64
+commit    337016c
+lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 16384
+	options=1203<RXCSUM,TXCSUM,TXSTATUS,SW_TIMESTAMP>
+	inet 127.0.0.1 netmask 0xff000000
+	inet6 ::1 prefixlen 128 
+	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1 
+	nd6 options=201<PERFORMNUD,DAD>
+gif0: flags=8010<POINTOPOINT,MULTICAST> mtu 1280
+stf0: flags=0<> mtu 1280
+anpi0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=400<CHANNEL_IO>
+	ether 16:13:e2:78:38:60
+	media: none
+	status: inactive
+anpi2: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=400<CHANNEL_IO>
+	ether 16:13:e2:78:38:62
+	media: none
+	status: inactive
+anpi1: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=400<CHANNEL_IO>
+	ether 16:13:e2:78:38:61
+	media: none
+	status: inactive
+en4: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=400<CHANNEL_IO>
+	ether 16:13:e2:78:38:40
+	nd6 options=201<PERFORMNUD,DAD>
+	media: none
+	status: inactive
+en5: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=400<CHANNEL_IO>
+	ether 16:13:e2:78:38:41
+	nd6 options=201<PERFORMNUD,DAD>
+	media: none
+	status: inactive
+en6: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=400<CHANNEL_IO>
+	ether 16:13:e2:78:38:42
+	nd6 options=201<PERFORMNUD,DAD>
+	media: none
+	status: inactive
+en1: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+	options=460<TSO4,TSO6,CHANNEL_IO>
+	ether 36:66:52:83:51:80
+	media: autoselect <full-duplex>
+	status: inactive
+en2: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+	options=460<TSO4,TSO6,CHANNEL_IO>
+	ether 36:66:52:83:51:84
+	media: autoselect <full-duplex>
+	status: inactive
+en3: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+	options=460<TSO4,TSO6,CHANNEL_IO>
+	ether 36:66:52:83:51:88
+	media: autoselect <full-duplex>
+	status: inactive
+bridge0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=63<RXCSUM,TXCSUM,TSO4,TSO6>
+	ether 36:66:52:83:51:80
+	Configuration:
+		id 0:0:0:0:0:0 priority 0 hellotime 0 fwddelay 0
+		maxage 0 holdcnt 0 proto stp maxaddr 256 timeout 1200
+		root id 0:0:0:0:0:0 priority 0 ifcost 0 port 0
+		ipfilter disabled flags 0x0
+	member: en1 flags=3<LEARNING,DISCOVER>
+	        ifmaxaddr 0 port 10 priority 0 path cost 0
+	member: en2 flags=3<LEARNING,DISCOVER>
+	        ifmaxaddr 0 port 11 priority 0 path cost 0
+	member: en3 flags=3<LEARNING,DISCOVER>
+	        ifmaxaddr 0 port 12 priority 0 path cost 0
+	nd6 options=201<PERFORMNUD,DAD>
+	media: <unknown type>
+	status: inactive
+ap1: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	ether 92:48:ff:09:7c:48
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect (none)
+	status: inactive
+en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	ether 6e:28:2b:ca:5b:c7
+	inet6 fe80::148e:60bd:47ce:8b2%en0 prefixlen 64 secured scopeid 0xf 
+	inet6 fd7e:f522:f2cc:1:cde:948b:7741:fa07 prefixlen 64 autoconf secured 
+	inet6 fd4d:be2a:8834:864:107d:e4d0:8a32:9083 prefixlen 64 autoconf secured 
+	inet 192.168.4.83 netmask 0xfffffc00 broadcast 192.168.7.255
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect
+	status: active
+utun0: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+	inet6 fe80::dec5:e2ba:2003:ed12%utun0 prefixlen 64 scopeid 0x13 
+	nd6 options=201<PERFORMNUD,DAD>
+awdl0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	ether 12:44:6b:23:ac:dd
+	inet6 fe80::1044:6bff:fe23:acdd%awdl0 prefixlen 64 scopeid 0x11 
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect
+	status: active
+llw0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=400<CHANNEL_IO>
+	ether 12:44:6b:23:ac:dd
+	inet6 fe80::1044:6bff:fe23:acdd%llw0 prefixlen 64 scopeid 0x12 
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect
+	status: inactive
+utun1: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+	inet6 fe80::9474:327e:a774:66fd%utun1 prefixlen 64 scopeid 0x14 
+	nd6 options=201<PERFORMNUD,DAD>
+nan0: flags=8822<BROADCAST,SMART,SIMPLEX,MULTICAST> mtu 1500
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	ether d2:95:fd:cb:a4:c5
+	inet6 fe80::d095:fdff:fecb:a4c5%nan0 prefixlen 64 scopeid 0x15 
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect (none)
+	status: inactive
+utun2: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 2000
+	inet6 fe80::9a6d:6634:f3e7:cd6a%utun2 prefixlen 64 scopeid 0x16 
+	nd6 options=201<PERFORMNUD,DAD>
+utun3: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1000
+	inet6 fe80::ce81:b1c:bd2c:69e%utun3 prefixlen 64 scopeid 0x17 
+	nd6 options=201<PERFORMNUD,DAD>
+utun5: flags=8050<POINTOPOINT,RUNNING,MULTICAST> mtu 1280
+	inet 10.25.129.29 --> 10.25.129.29 netmask 0xffffffff
+utun6: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+	inet6 fe80::4bc7:b08e:cb25:51b0%utun6 prefixlen 64 scopeid 0x1a 
+	nd6 options=201<PERFORMNUD,DAD>
+utun7: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+	inet6 fe80::dc32:6c44:75ab:7155%utun7 prefixlen 64 scopeid 0x1b 
+	nd6 options=201<PERFORMNUD,DAD>
+utun8: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+	inet6 fe80::5d92:c168:978e:be49%utun8 prefixlen 64 scopeid 0x1c 
+	nd6 options=201<PERFORMNUD,DAD>
+utun9: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+	inet6 fe80::1599:e55a:59e6:da65%utun9 prefixlen 64 scopeid 0x1d 
+	nd6 options=201<PERFORMNUD,DAD>
+utun4: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+utun10: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+utun11: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+utun12: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+utun13: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+utun15: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+	inet6 fe80::627d:6e9:6e94:b30%utun15 prefixlen 64 scopeid 0x24 
+	nd6 options=201<PERFORMNUD,DAD>
+utun16: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+	inet6 fe80::5e14:273e:89be:6d40%utun16 prefixlen 64 scopeid 0x25 
+	nd6 options=201<PERFORMNUD,DAD>
+utun14: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+
+=== public address  01:15:16 ===
+trial 1  http://checkip.amazonaws.com/
+  dns           72.2 ms  checkip.amazonaws.com -> 54.84.52.38:80 (IPv4)
+  connect       90.1 ms  192.168.4.83:53646 -> 54.84.52.38:80
+  first byte    96.0 ms
+  transfer       3.3 ms  14 bytes, 0.03 Mbit/s
+  status     HTTP/1.1 200 
+connect over 1 trials: min 90.1 ms, median 90.1 ms
+160.2.119.105
+
+=== latency cdn  01:15:16 ===
+trial 1  http://example.com/
+  dns          184.0 ms  example.com -> 104.20.23.154:80 (IPv4)
+  connect       31.1 ms  192.168.4.83:53647 -> 104.20.23.154:80
+  first byte    37.4 ms
+  transfer       2.2 ms  589 bytes, 2.13 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://example.com/
+  dns            1.7 ms  example.com -> 104.20.23.154:80 (IPv4)
+  connect       35.4 ms  192.168.4.83:53648 -> 104.20.23.154:80
+  first byte    42.9 ms
+  transfer       2.1 ms  589 bytes, 2.25 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://example.com/
+  dns            2.2 ms  example.com -> 104.20.23.154:80 (IPv4)
+  connect       29.8 ms  192.168.4.83:53649 -> 104.20.23.154:80
+  first byte    35.9 ms
+  transfer       3.6 ms  589 bytes, 1.31 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://example.com/
+  dns            2.1 ms  example.com -> 104.20.23.154:80 (IPv4)
+  connect       26.5 ms  192.168.4.83:53650 -> 104.20.23.154:80
+  first byte    33.8 ms
+  transfer       1.7 ms  589 bytes, 2.78 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://example.com/
+  dns            2.4 ms  example.com -> 104.20.23.154:80 (IPv4)
+  connect       29.6 ms  192.168.4.83:53651 -> 104.20.23.154:80
+  first byte    40.9 ms
+  transfer       0.0 ms  589 bytes, 235.60 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 26.5 ms, median 29.8 ms
+
+=== latency utah  01:15:17 ===
+trial 1  http://mirrors.xmission.com/debian/README
+  dns            9.4 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect      126.4 ms  192.168.4.83:53652 -> 198.60.22.13:80
+  first byte    47.4 ms
+  transfer       0.0 ms  1198 bytes, 208.35 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://mirrors.xmission.com/debian/README
+  dns            1.7 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       43.8 ms  192.168.4.83:53653 -> 198.60.22.13:80
+  first byte    45.9 ms
+  transfer       0.0 ms  1198 bytes, 532.44 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://mirrors.xmission.com/debian/README
+  dns            1.9 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       43.4 ms  192.168.4.83:53654 -> 198.60.22.13:80
+  first byte    45.6 ms
+  transfer       0.0 ms  1198 bytes, 563.76 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://mirrors.xmission.com/debian/README
+  dns            2.1 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       45.1 ms  192.168.4.83:53655 -> 198.60.22.13:80
+  first byte    45.1 ms
+  transfer       0.0 ms  1198 bytes, 563.76 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://mirrors.xmission.com/debian/README
+  dns            2.5 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       45.1 ms  192.168.4.83:53656 -> 198.60.22.13:80
+  first byte    98.9 ms
+  transfer       0.0 ms  1198 bytes, 479.20 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 43.4 ms, median 45.1 ms
+
+=== latency california  01:15:17 ===
+trial 1  http://mirrors.ocf.berkeley.edu/debian/README
+  dns           86.5 ms  mirrors.ocf.berkeley.edu -> 169.229.200.70:80 (IPv4)
+  connect       57.0 ms  192.168.4.83:53657 -> 169.229.200.70:80
+  first byte    47.4 ms
+  transfer       0.1 ms  1198 bytes, 107.69 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://mirrors.ocf.berkeley.edu/debian/README
+  dns            3.2 ms  mirrors.ocf.berkeley.edu -> 169.229.200.70:80 (IPv4)
+  connect       45.4 ms  192.168.4.83:53658 -> 169.229.200.70:80
+  first byte    51.4 ms
+  transfer       0.0 ms  1198 bytes, 416.70 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://mirrors.ocf.berkeley.edu/debian/README
+  dns            4.0 ms  mirrors.ocf.berkeley.edu -> 169.229.200.70:80 (IPv4)
+  connect       53.9 ms  192.168.4.83:53659 -> 169.229.200.70:80
+  first byte    49.9 ms
+  transfer       1.5 ms  1198 bytes, 6.23 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://mirrors.ocf.berkeley.edu/debian/README
+  dns            4.6 ms  mirrors.ocf.berkeley.edu -> 169.229.200.70:80 (IPv4)
+  connect       97.9 ms  192.168.4.83:53660 -> 169.229.200.70:80
+  first byte    43.2 ms
+  transfer       2.3 ms  1198 bytes, 4.10 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://mirrors.ocf.berkeley.edu/debian/README
+  dns            4.2 ms  mirrors.ocf.berkeley.edu -> 169.229.200.70:80 (IPv4)
+  connect       48.4 ms  192.168.4.83:53661 -> 169.229.200.70:80
+  first byte    44.6 ms
+  transfer       2.2 ms  1198 bytes, 4.40 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 45.4 ms, median 53.9 ms
+
+=== latency new york  01:15:18 ===
+trial 1  http://mirrors.rit.edu/debian/README
+  dns          153.8 ms  mirrors.rit.edu -> 129.21.171.72:80 (IPv4)
+  connect       91.3 ms  192.168.4.83:53662 -> 129.21.171.72:80
+  first byte   115.8 ms
+  transfer       0.1 ms  1198 bytes, 136.91 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://mirrors.rit.edu/debian/README
+  dns            3.9 ms  mirrors.rit.edu -> 129.21.171.72:80 (IPv4)
+  connect       95.1 ms  192.168.4.83:53663 -> 129.21.171.72:80
+  first byte    90.1 ms
+  transfer       4.9 ms  1198 bytes, 1.96 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://mirrors.rit.edu/debian/README
+  dns            3.6 ms  mirrors.rit.edu -> 129.21.171.72:80 (IPv4)
+  connect       91.2 ms  192.168.4.83:53664 -> 129.21.171.72:80
+  first byte    92.9 ms
+  transfer       1.5 ms  1198 bytes, 6.43 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://mirrors.rit.edu/debian/README
+  dns            2.0 ms  mirrors.rit.edu -> 129.21.171.72:80 (IPv4)
+  connect      138.3 ms  192.168.4.83:53665 -> 129.21.171.72:80
+  first byte    91.9 ms
+  transfer       3.9 ms  1198 bytes, 2.45 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://mirrors.rit.edu/debian/README
+  dns            4.2 ms  mirrors.rit.edu -> 129.21.171.72:80 (IPv4)
+  connect       93.7 ms  192.168.4.83:53666 -> 129.21.171.72:80
+  first byte    91.0 ms
+  transfer       4.9 ms  1198 bytes, 1.96 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 91.2 ms, median 93.7 ms
+
+=== latency germany  01:15:19 ===
+trial 1  http://ftp.fau.de/debian/README
+  dns          211.8 ms  ftp.fau.de -> 131.188.12.211:80 (IPv4)
+  connect      185.1 ms  192.168.4.83:53667 -> 131.188.12.211:80
+  first byte   189.9 ms
+  transfer       1.6 ms  1198 bytes, 5.95 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://ftp.fau.de/debian/README
+  dns            2.9 ms  ftp.fau.de -> 131.188.12.211:80 (IPv4)
+  connect      180.1 ms  192.168.4.83:53668 -> 131.188.12.211:80
+  first byte   202.1 ms
+  transfer       1.6 ms  1198 bytes, 5.83 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://ftp.fau.de/debian/README
+  dns            3.4 ms  ftp.fau.de -> 131.188.12.211:80 (IPv4)
+  connect      179.6 ms  192.168.4.83:53669 -> 131.188.12.211:80
+  first byte   184.9 ms
+  transfer       2.1 ms  1198 bytes, 4.64 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://ftp.fau.de/debian/README
+  dns            3.7 ms  ftp.fau.de -> 131.188.12.211:80 (IPv4)
+  connect      181.6 ms  192.168.4.83:53670 -> 131.188.12.211:80
+  first byte   252.7 ms
+  transfer       0.0 ms  1198 bytes, 532.44 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://ftp.fau.de/debian/README
+  dns            3.0 ms  ftp.fau.de -> 131.188.12.211:80 (IPv4)
+  connect      183.3 ms  192.168.4.83:53671 -> 131.188.12.211:80
+  first byte   183.1 ms
+  transfer       0.5 ms  1198 bytes, 20.74 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 179.6 ms, median 181.6 ms
+
+=== latency japan  01:15:21 ===
+trial 1  http://ftp.jaist.ac.jp/debian/README
+  dns            9.3 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      165.3 ms  192.168.4.83:53672 -> 150.65.7.130:80
+  first byte   169.0 ms
+  transfer       0.1 ms  1198 bytes, 127.79 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://ftp.jaist.ac.jp/debian/README
+  dns            2.9 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      160.5 ms  192.168.4.83:53673 -> 150.65.7.130:80
+  first byte   168.9 ms
+  transfer       0.0 ms  1198 bytes, 222.88 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://ftp.jaist.ac.jp/debian/README
+  dns            2.7 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      166.1 ms  192.168.4.83:53674 -> 150.65.7.130:80
+  first byte   175.4 ms
+  transfer       2.5 ms  1198 bytes, 3.86 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 4  http://ftp.jaist.ac.jp/debian/README
+  dns            1.7 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      172.8 ms  192.168.4.83:53675 -> 150.65.7.130:80
+  first byte   165.3 ms
+  transfer       0.0 ms  1198 bytes, 383.36 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 5  http://ftp.jaist.ac.jp/debian/README
+  dns            1.6 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      162.2 ms  192.168.4.83:53676 -> 150.65.7.130:80
+  first byte   181.0 ms
+  transfer       0.0 ms  1198 bytes, 399.33 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 5 trials: min 160.5 ms, median 165.3 ms
+
+=== download utah  01:15:23 ===
+trial 1  http://mirrors.xmission.com/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            7.0 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       46.3 ms  192.168.4.83:53677 -> 198.60.22.13:80
+  first byte    49.5 ms
+  transfer     631.7 ms  13332733 bytes, 168.85 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://mirrors.xmission.com/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            3.8 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       48.5 ms  192.168.4.83:53678 -> 198.60.22.13:80
+  first byte    47.9 ms
+  transfer     755.0 ms  13332733 bytes, 141.27 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://mirrors.xmission.com/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            3.6 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       47.7 ms  192.168.4.83:53679 -> 198.60.22.13:80
+  first byte    90.2 ms
+  transfer     772.4 ms  13332733 bytes, 138.10 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 3 trials: min 46.3 ms, median 47.7 ms
+
+=== download japan  01:15:26 ===
+trial 1  http://ftp.jaist.ac.jp/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            9.5 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      225.1 ms  192.168.4.83:53680 -> 150.65.7.130:80
+  first byte   169.7 ms
+  transfer   10485.9 ms  13332733 bytes, 10.17 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 2  http://ftp.jaist.ac.jp/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            3.1 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      189.5 ms  192.168.4.83:53681 -> 150.65.7.130:80
+  first byte   178.0 ms
+  transfer   20984.9 ms  13332733 bytes, 5.08 Mbit/s
+  status     HTTP/1.1 200 OK
+trial 3  http://ftp.jaist.ac.jp/debian/dists/trixie/main/binary-amd64/Packages.gz
+  dns            1.5 ms  ftp.jaist.ac.jp -> 150.65.7.130:80 (IPv4)
+  connect      197.7 ms  192.168.4.83:53685 -> 150.65.7.130:80
+  first byte   166.6 ms
+  transfer   11010.2 ms  13332733 bytes, 9.69 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 3 trials: min 189.5 ms, median 197.7 ms
+
+=== two at once  01:16:09 ===
+trial 1  http://mirrors.xmission.com/debian/README
+  dns            7.6 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       47.2 ms  192.168.4.83:53687 -> 198.60.22.13:80
+  first byte    45.4 ms
+  transfer       0.1 ms  1198 bytes, 187.92 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 1 trials: min 47.2 ms, median 47.2 ms
+trial 1  http://mirrors.xmission.com/debian/README
+  dns            7.3 ms  mirrors.xmission.com -> 198.60.22.13:80 (IPv4)
+  connect       47.3 ms  192.168.4.83:53686 -> 198.60.22.13:80
+  first byte    45.4 ms
+  transfer       0.1 ms  1198 bytes, 180.83 Mbit/s
+  status     HTTP/1.1 200 OK
+connect over 1 trials: min 47.3 ms, median 47.3 ms
+
+=== dns trace  01:16:09 ===
+
+; <<>> DiG 9.10.6 <<>> +trace ftp.jaist.ac.jp
+;; global options: +cmd
+.			508994	IN	NS	a.root-servers.net.
+.			508994	IN	NS	b.root-servers.net.
+.			508994	IN	NS	c.root-servers.net.
+.			508994	IN	NS	d.root-servers.net.
+.			508994	IN	NS	e.root-servers.net.
+.			508994	IN	NS	f.root-servers.net.
+.			508994	IN	NS	g.root-servers.net.
+.			508994	IN	NS	h.root-servers.net.
+.			508994	IN	NS	i.root-servers.net.
+.			508994	IN	NS	j.root-servers.net.
+.			508994	IN	NS	k.root-servers.net.
+.			508994	IN	NS	l.root-servers.net.
+.			508994	IN	NS	m.root-servers.net.
+.			508994	IN	RRSIG	NS 8 0 518400 20261029200000 20261016190000 8763 . i1/IWoS8WBSHGea4mx4lBgL39iGeD8uLmofxG3EPxifo+GjM2ufUwOgE 4XzmWdq6hEdCWbVdKKlXKy3pGcgpKdqWwnBlyOkDtOuLibdLrHxUZqVv GpR++FiPDClG3yHffY8BbAkPI7n7s/jmRuRJfz4CJ3gTHqj0mPYk0ci7 FFLqI8KxiidyQWb5bYcYTl1mN4BwnUhBHhA7ac43kyc81MupIEQ2Dbfs 0lWvoqgE4Beo2Zk4+E3HH8kpUbUlS0tMldTKcEgUxd6McUwGcz2Fojsm TKCmMKU+D+v+dIfxltRH4rnXnBssLRVzyCabEgBvupZjN8ircNkJ9PeD 52SBfA==
+;; Received 1128 bytes from 192.168.4.1#53(192.168.4.1) in 31 ms
+
+;; Received 468 bytes from 199.7.83.42#53(l.root-servers.net) in 45 ms
+
+
+=== done in 55 s, 0 failed ===
